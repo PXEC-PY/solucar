@@ -53,8 +53,6 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
 .link-btn { text-decoration: underline; color: #9ca3af; font-size: 13px; }
 
 /* ---------- Topbar & header ---------- */
-.topbar { background: var(--ink); color: #d1d5db; font-size: 13px; }
-.topbar__inner { display: flex; justify-content: space-between; gap: 16px; padding: 8px 0; }
 .header { position: sticky; top: 0; z-index: 50; background: rgba(255, 255, 255, .85); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid transparent; transition: box-shadow .3s, border-color .3s; }
 .header.is-scrolled { box-shadow: 0 8px 30px -18px rgba(0, 0, 0, .35); border-color: var(--line); }
 .header__inner { display: flex; align-items: center; gap: 24px; height: 72px; }

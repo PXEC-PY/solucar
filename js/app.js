@@ -83,7 +83,6 @@
   const waDefault = waLink('Hola Solucar, quiero cotizar un repuesto.');
   ['#headerWa', '#waFloat', '#emptyWa'].forEach((s) => ($(s).href = waDefault));
   $('#year').textContent = new Date().getFullYear();
-  $('#topbarHorario').textContent = `🕘 ${CONFIG.horario[0].dias}: ${CONFIG.horario[0].horas}`;
   $('#footContact').innerHTML = `
     <li>📍 ${CONFIG.direccion}</li>
     <li>📞 <a href="${waDefault}" target="_blank" rel="noopener">${CONFIG.whatsappVisible}</a></li>

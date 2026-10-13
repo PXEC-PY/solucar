@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Solucar Repuestos | Repuestos Hyundai, Kia y SsangYong</title>
+  <meta name="description" content="Repuestos originales y alternativos para Hyundai, Kia y SsangYong. Tren delantero, frenos, iluminación, carrocería, refrigeración y motor. Envíos a todo el Paraguay." />
+  <link rel="icon" href="logo.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ BARRA SUPERIOR ============ -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>🚚 Envíos a todo el país</span>
+      <span class="hide-sm">🔧 Asesoría gratis con tu chapa o VIN</span>
+      <span class="hide-sm" id="topbarHorario"></span>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo"><img src="logo.jpeg" alt="Solucar Repuestos" /></a>
+
+      <nav class="nav" id="nav">
+        <a href="#inicio" class="nav__link is-active">Inicio</a>
+        <a href="#nosotros" class="nav__link">Nosotros</a>
+        <a href="#categorias" class="nav__link">Categorías</a>
+        <a href="#destacados" class="nav__link">Destacados</a>
+        <a href="#catalogo" class="nav__link">Catálogo</a>
+        <a href="#marcas" class="nav__link">Marcas</a>
+        <a href="#faq" class="nav__link">Preguntas</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" id="openSearch" aria-label="Buscar">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" id="openCart" aria-label="Ver combo">
+          <svg viewBox="0 0 24 24"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <a class="btn btn--wa hide-sm" id="headerWa" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="wa-ico"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3Z"/></svg>
+          WhatsApp
+        </a>
+        <button class="icon-btn burger" id="burger" aria-label="Menú">
+          <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg"></div>
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <span class="pill reveal"><span class="dot"></span> Especialistas en vehículos coreanos</span>
+          <h1 class="hero__title reveal">
+            Repuestos <span class="text-red">originales</span><br />
+            y alternativos para<br />
+            <span class="rotator" id="rotator"><span>Hyundai</span></span>
+          </h1>
+          <p class="hero__lead reveal">Tren delantero, frenos, iluminación, carrocería, refrigeración y motor. Te ayudamos a encontrar la pieza correcta <strong>a la primera</strong>.</p>
+
+          <form class="hero-search reveal" id="heroSearch">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input type="search" id="heroSearchInput" placeholder="Ej: amortiguador Tucson, faro Sportage…" autocomplete="off" />
+            <button class="btn btn--red" type="submit">Buscar</button>
+          </form>
+
+          <div class="hero__quick reveal">
+            <span>Populares:</span>
+            <button data-quick="tren-delantero">Tren delantero</button>
+            <button data-quick="frenos">Frenos</button>
+            <button data-quick="refrigeracion">Refrigeración</button>
+            <button data-quick="iluminacion">Faros</button>
+            <button data-quick="motor">Motor</button>
+            <button data-quick="carroceria">Parrillas</button>
+          </div>
+
+          <div class="stats reveal">
+            <div><b><span data-count="20">0</span>%</b><small>Descuento máx. en combos</small></div>
+            <div><b data-count="3">0</b><small>Marcas coreanas</small></div>
+            <div><b data-count="0" id="statProducts">0</b><small>Repuestos en catálogo</small></div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="hero__circle"></div>
+          <img src="img/kia-sportage.png" alt="Kia Sportage" class="hero__car" />
+          <div class="float-card float-card--a">
+            <span class="float-card__ico">✔</span>
+            <div><b>Original o alternativo</b><small>Tú eliges el precio</small></div>
+          </div>
+          <div class="float-card float-card--b">
+            <span class="float-card__ico">%</span>
+            <div><b>Arma tu combo</b><small>Hasta 20% off</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee">
+        <div class="marquee__track" id="marquee"></div>
+      </div>
+    </section>
+
+    <!-- ============ NOSOTROS ============ -->
+    <section class="section section--gray" id="nosotros">
+      <div class="container about">
+        <div class="about__media">
+          <figure class="vehicle-feature reveal" data-vehicle="kia-sportage" hidden>
+            <img alt="Kia Sportage" />
+            <figcaption>Kia Sportage</figcaption>
+          </figure>
+          <div class="about__collage reveal" id="collage"></div>
+        </div>
+        <div class="about__text reveal">
+          <span class="eyebrow">Nosotros</span>
+          <h2>Importamos y distribuimos repuestos coreanos</h2>
+          <p>Solucar es una empresa paraguaya con <strong>más de 12 años</strong> en el mercado, dedicada a la importación y distribución de repuestos originales coreanos para <strong>Kia, Hyundai y SsangYong</strong>.</p>
+          <p>Asesoramos a mecánicos y particulares para que reciban la pieza correcta a la primera, con el código original de fábrica. Hoy atendemos en <strong>4 sucursales</strong>: Luque, Mariano Roque Alonso, San Lorenzo y Ñemby.</p>
+          <div class="features">
+            <div class="feature"><span>🏭</span><div><b>Originales coreanos</b><small>Procedencia garantizada</small></div></div>
+            <div class="feature"><span>🛡️</span><div><b>Alternativos homologados</b><small>Hasta 38% más económicos</small></div></div>
+            <div class="feature"><span>🔎</span><div><b>Asesoría por VIN</b><small>La pieza correcta a la primera</small></div></div>
+            <div class="feature"><span>🚚</span><div><b>Envíos nacionales</b><small>A todo el Paraguay</small></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CATEGORÍAS ============ -->
+    <section class="section" id="categorias">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Busca por sistema</span>
+          <h2>¿Qué necesita tu auto?</h2>
+          <p>Elige una categoría y te mostramos al instante los repuestos disponibles.</p>
+        </div>
+        <div class="cat-grid" id="catGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ VITRINA: LO MÁS PEDIDO ============ -->
+    <section class="section showcase" id="destacados">
+      <div class="container">
+        <div class="showcase__head reveal">
+          <div>
+            <span class="eyebrow eyebrow--light">Lo más pedido</span>
+            <h2>Repuestos destacados</h2>
+            <p>Pasa el mouse para ver otra vista, o abre la ficha para ver todas las fotos.</p>
+          </div>
+          <div class="showcase__arrows">
+            <button data-slide="-1" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></svg></button>
+            <button data-slide="1" aria-label="Siguiente"><svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></button>
+          </div>
+        </div>
+        <div class="showcase__track reveal" id="showcase"></div>
+      </div>
+    </section>
+
+    <!-- ============ CATÁLOGO ============ -->
+    <section class="section section--gray" id="catalogo">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Catálogo</span>
+          <h2>Todos los repuestos</h2>
+          <p>Precios estimados en versión original y alternativa homologada. Agrégalos a tu combo y cotiza por WhatsApp.</p>
+        </div>
+
+        <form class="vin reveal" id="vinForm" autocomplete="off">
+          <div class="vin__label">
+            <b>Busca por VIN</b>
+            <small>Los 17 caracteres del chasis (cédula verde o parabrisas) · <button type="button" class="link-btn" id="vinExample">usar VIN de ejemplo</button></small>
+          </div>
+          <div class="vin__field">
+            <input id="vinInput" maxlength="17" spellcheck="false" placeholder="KNAPM81ABH7123456" aria-label="Número VIN" />
+            <span id="vinCount">0/17</span>
+          </div>
+          <button class="btn btn--red" type="submit">Consultar</button>
+          <div class="vin__result" id="vinResult" hidden></div>
+          <p class="vin__note">Demo: identifica marca y año desde el VIN; el modelo exacto te lo confirmamos por WhatsApp.</p>
+        </form>
+
+        <div class="toolbar reveal">
+          <div class="chips" id="chips"></div>
+          <div class="toolbar__right">
+            <div class="field">
+              <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+              <input type="search" id="searchInput" placeholder="Buscar repuesto, modelo o código…" />
+            </div>
+            <select id="brandSelect" class="select">
+              <option value="">Todas las marcas</option>
+            </select>
+            <select id="modelSelect" class="select" aria-label="Modelo"></select>
+            <select id="yearSelect" class="select" aria-label="Año">
+              <option value="">Todos los años</option>
+            </select>
+            <select id="sortSelect" class="select">
+              <option value="">Destacados</option>
+              <option value="asc">Precio: menor a mayor</option>
+              <option value="desc">Precio: mayor a menor</option>
+              <option value="az">Nombre A–Z</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="result-info" id="resultInfo"></div>
+        <div class="grid" id="grid"></div>
+        <div class="empty" id="empty" hidden>
+          <p>No encontramos ese repuesto en el catálogo destacado.</p>
+          <a class="btn btn--wa" id="emptyWa" target="_blank" rel="noopener">Consúltanos por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMBO BANNER ============ -->
+    <section class="combo-banner">
+      <div class="container combo-banner__inner reveal">
+        <div>
+          <span class="eyebrow eyebrow--light">Arma tu combo</span>
+          <h2>Mientras más llevas, <span class="text-red">menos pagas</span></h2>
+          <ul class="rules">
+            <li><b>20% OFF</b> en el Pack Refrigeración Tivoli: radiador + manguera de entrada + manguera de salida</li>
+            <li><b>15% OFF</b> llevando 2 o más piezas de Tren Delantero</li>
+            <li><b>10% OFF</b> llevando 3 o más repuestos de cualquier categoría</li>
+          </ul>
+        </div>
+        <button class="btn btn--red btn--lg" id="bannerCart">Ver mi combo →</button>
+      </div>
+    </section>
+
+    <!-- ============ MARCAS ============ -->
+    <section class="section" id="marcas">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Marcas y modelos</span>
+          <h2>Tres marcas. Un solo especialista.</h2>
+        </div>
+        <figure class="vehicle-banner reveal" data-vehicle="ssangyong-rexton" hidden>
+          <img alt="SsangYong Rexton" />
+          <figcaption><span class="eyebrow eyebrow--light">Protagonista</span><b>SsangYong Rexton</b></figcaption>
+        </figure>
+        <div class="brand-grid" id="brandGrid"></div>
+      </div>
+    </section>
+
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <div class="section__head reveal">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2>Resolvemos tus dudas</h2>
+        </div>
+        <div class="faq reveal">
+          <details><summary>¿Cuál es la diferencia entre original y alternativo?</summary><p>El original es el repuesto de procedencia coreana con las especificaciones de fábrica. El alternativo es una pieza homologada de buena calidad a un precio menor. Te asesoramos según el uso de tu vehículo.</p></details>
+          <details><summary>¿Cómo sé que el repuesto le sirve a mi auto?</summary><p>Envíanos por WhatsApp tu chapa o número VIN y confirmamos la compatibilidad exacta antes de la compra.</p></details>
+          <details><summary>¿Hacen envíos al interior?</summary><p>Sí, enviamos a todo el país mediante transportadora. El costo y plazo dependen de la ciudad de destino.</p></details>
+          <details><summary>¿Cómo funciona “Arma tu combo”?</summary><p>Agrega los repuestos que necesitas; el descuento se calcula automáticamente. Luego envías el pedido por WhatsApp y te confirmamos stock y precio final.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <img src="logo.jpeg" alt="Solucar" class="footer__logo" />
+        <p>Repuestos originales y alternativos para Hyundai, Kia y SsangYong.</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul id="footContact"></ul>
+      </div>
+      <div>
+        <h4>Horario</h4>
+        <ul id="footHorario"></ul>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#categorias">Categorías</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#marcas">Marcas</a></li>
+          <li><a href="#faq">Preguntas</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> Solucar Repuestos. Hyundai, Kia y SsangYong son marcas registradas de sus respectivos dueños.</span>
+      <button class="link-btn" id="openCredits">Créditos de imágenes</button>
+    </div>
+  </footer>
+
+  <!-- ============ CARRITO / COMBO ============ -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Mi combo">
+    <div class="drawer__head">
+      <h3>Mi combo</h3>
+      <button class="icon-btn" data-close aria-label="Cerrar"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="drawer__progress" id="progress"></div>
+    <div class="drawer__body" id="cartItems"></div>
+    <div class="drawer__foot" id="cartFoot"></div>
+  </aside>
+
+  <!-- ============ MODAL DETALLE ============ -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <div class="modal__box" id="modalBox"></div>
+  </div>
+
+  <!-- ============ BUSCADOR RÁPIDO ============ -->
+  <div class="spotlight" id="spotlight">
+    <div class="spotlight__box">
+      <div class="field field--lg">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="spotInput" placeholder="¿Qué repuesto buscas?" autocomplete="off" />
+      </div>
+      <div class="spotlight__results" id="spotResults"></div>
+    </div>
+  </div>
+
+  <a class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3Z"/></svg>
+  </a>
+  <div class="toast" id="toast"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

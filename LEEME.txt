@@ -1,0 +1,35 @@
+SOLUCAR REPUESTOS — Sitio web (Paraguay, precios en guaraníes)
+================================================================
+
+Archivos
+  index.html, css/styles.css, js/data.js, js/app.js
+  img/repuestos/  -> fotos reales de los 20 productos (tomadas del repo solucar-web)
+  img/empresa/    -> fotos del edificio y sucursales (sección Nosotros)
+  respaldo-v1/    -> versión anterior, por si se necesita volver
+
+Editar contenido: js/data.js
+  - CONFIG: WhatsApp 0984 294 262, solucarsrl@gmail.com, Iturbe y Yegros (Luque), sucursales.
+    El HORARIO es de ejemplo: confirmarlo.
+  - PRODUCTS: 20 repuestos reales con código original y precio de lista (Gs.).
+    El precio "Alternativo" es un estimado (62% del precio de lista): revisarlo.
+  - COMBO_RULES: descuentos del combo
+      20% Pack Refrigeración Tivoli (radiador + manguera de entrada + manguera de salida)
+      15% llevando 2+ piezas de Tren Delantero
+      10% llevando 3+ repuestos de cualquier tipo
+      (si a una pieza le aplican varias, se usa la mayor)
+
+Agregar o cambiar un producto
+  1. Pon la foto en img/repuestos/ (jpg o png).
+  2. Copia un bloque de PRODUCTS en js/data.js y cambia id, nombre, código, precio y fotos.
+  3. Para más vistas del mismo producto agrega más archivos en "fotos: [...]".
+
+Regla del sitio: SOLO Kia, Hyundai y SsangYong. No usar fotos con logos, cajas o carteles
+de otras marcas (aceites, marcas alternativas, otros autos).
+
+Fotos de vehículos (fondo transparente, PNG)
+  img/kia-sportage.png      -> portada
+  img/kia-sportage.png      -> también en la sección Nosotros
+  img/ssangyong-rexton.png  -> sección Marcas (aparece sola cuando exista el archivo)
+
+Búsqueda por VIN: es una DEMO. Lee marca y año reales del VIN; el modelo es estimado.
+Atajos: Ctrl+K o "/" abre el buscador rápido.

@@ -1,0 +1,6 @@
+# Archivos internos (no se publican)
+respaldo-v1/
+*.zip
+.vscode/
+Thumbs.db
+.DS_Store
